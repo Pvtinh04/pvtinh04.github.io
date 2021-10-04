@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteRule "index.html" "index.php"
+
+RewriteRule "^([a-zA-Z0-9]+).html$" "index.php?page=$1"
+
+RewriteRule "^chinh-sach-van-chuyen.html$" "index.php?page=blog&status=2"
+RewriteRule "^chinh-sach-rieng-tu.html$" "index.php?page=blog&status=3"
+RewriteRule "^chinh-sach-bao-hanh.html$" "index.php?page=blog&status=4"
+
+RewriteRule "^danh-sach-san-pham/([0-9]+)/([a-zA-Z0-9-]+).html$" "index.php?page=productlist&cateID=$1&cateName=$2"
+
+RewriteRule "^danh-sach-san-pham/([a-zA-Z0-9-_]+).html$" "index.php?page=productlist&status=$1"
+
+RewriteRule "^san-pham/([0-9]+)/([a-zA-Z0-9-_]+).html$" "index.php?page=pro_details&proID=$1&proName=$2"
+
+
+
+RewriteRule "^bai-viet/([0-9]+)/([a-zA-Z0-9-_]+).html$" "index.php?page=new_detail&newID=$1&newTitle=$2"
+
+RewriteRule "^danh-sach-bai-viet/([0-9]+)/([a-zA-Z0-9-_]+).html$" "index.php?page=newlist&cateID=$1&cateTitle=$2"
+
+
