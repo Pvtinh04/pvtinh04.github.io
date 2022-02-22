@@ -1,9 +1,9 @@
 <?php  
 	class Connect
 	{
-		private $dns = "mysql:host=localhost;dbname=phamtinh_cosmetic";
-		private $user = "phamtinh_tinh";
-		private $pass = "phamtinh";
+		private $dns = "mysql:host=localhost;dbname=id18502244_phamtinh_cosmetics";
+		private $user = "id18502244_phamtinh";
+		private $pass = "Pvtinh_01678187820";
 		protected $pdo = null;
 
 		function __construct()
